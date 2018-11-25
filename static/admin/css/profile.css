@@ -1,0 +1,272 @@
+/* Navigation */
+
+#anav {
+  width: 100%;
+  height: 120px;
+  background-color: #36454F;
+}
+
+* {
+ font-weight: 5 !important;
+}
+
+#anav .wrapper {
+  padding: 10px;
+}
+
+#logo {
+  float: left;
+  margin-left: 10%;
+}
+
+#logo img {
+  display: inline-block;
+  width: 196.2px;
+  height: 48px;
+}
+
+#logo h2 {
+  display: inline-block;
+  color: white;
+   vertical-align: 12px;
+   font-size: 26px;
+}
+
+#cog {
+  float: right;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#cog img {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
+
+#bell {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  float: right;
+  margin-right: 20px;
+}
+
+#bell img {
+  width: 50px;
+  height: 50px;
+}
+
+#profileicon {
+  display: block;
+  float: right;
+  border-radius: 500px;
+  width: 50px;
+  background-size: cover;
+  margin-right: 5%;
+  height: 50px;
+  background-color: white;
+}
+
+#profileicon img {
+  border-radius: 500px;
+  width: 50px;
+  height: 50px;
+}
+
+#apptabs {
+  margin-left: 10%;
+  margin-top: 66px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+#apptabs li {
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  color: white;
+  display: inline-block;
+}
+
+#apptabs ul li:nth-child(1) {
+  background-color: white !important;
+  color: black;
+}
+
+#subnav {
+  background-color: white;
+  border-bottom: 2px rgba(0,0,1,0.5) solid;
+  width: 100%;
+  height: 90px;
+}
+
+#subnav h1 {
+  margin-left: 10%;
+  width: 500px;
+  float: left;
+  padding-top: 1%;
+  height: 70px;
+  font-size: 60px;
+}
+
+#subnav h3 {
+ float: right;
+ margin-right: 10%;
+ margin-top: 1.8%;
+}
+/* Page Body */
+
+body {
+ background-color: #E8E8E8;
+ margin: 0;
+ padding 0;
+}
+
+#goodAfternoon {
+  margin-top: 4%;
+  margin-left: 10%;
+  margin-bottom: 5%;
+}
+
+#appBox {
+  width: 620px;
+  height: 380px;
+  -webkit-box-shadow: 0px 0px 108px -27px rgba(0,0,0,0.56);
+-moz-box-shadow: 0px 0px 108px -27px rgba(0,0,0,0.56);
+box-shadow: 0px 0px 108px -27px rgba(0,0,0,0.56);
+  background-color: white;
+}
+
+#appBox h3 {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+#appBox h4 {
+  text-align: center;
+  margin-bottom: 4%;
+}
+
+#appBox .button {
+ margin-left: 22%;
+}
+
+.button {
+  padding: 10px;
+  color: white;
+  background-color: black;
+}
+
+#boxWrapper {
+  width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.bookkeeping {
+  margin-top: 6%;
+  display: inline-block;
+  float: left;
+  }
+
+.report {
+margin-top: 6%;
+  margin-left: 2%;
+  float: right;
+}
+
+.report h4 {
+  margin-top: 20%;
+}
+
+.audit {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  display: inline-block;
+}
+
+.taxes {
+margin-top: 3%;
+display: inline-block;
+margin-left: 2%;
+background-color: #F0F8FF !important;
+}
+
+/* Appointments */
+
+#appointmentBlock {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  background-color: white;
+  -webkit-box-shadow: 4px -16px 177px -58px rgba(0,0,0,0.56);
+-moz-box-shadow: 4px -16px 177px -58px rgba(0,0,0,0.56);
+box-shadow: 4px -16px 177px -58px rgba(0,0,0,0.56);
+}
+
+#appointmentBlock h1 {
+  margin-left: 9%;
+  padding-top: 9%;
+  margin-bottom: 3%;
+}
+
+#appd {
+  width: 50%;
+}
+
+#appd .button {
+  margin-left: 9%;
+}
+
+#appd2 {
+  width: 50%;
+  background-color: #7BAFD4;
+}
+
+#appd2 h1 {
+color: white;
+  margin-bottom: 1%;
+}
+
+#appd2 h2 {
+color: white;
+  margin-left: 9%;
+  margin-bottom: 2%;
+}
+
+#appd2 .button {
+  margin-left: 9%;
+}
+
+/* Bookkeeping Section */
+
+.bookkeeping .it {
+  color: white;
+}
+
+.bookkeeping ul {
+  margin-top: 1%;
+}
+
+.bookkeeping li {
+   list-style-type: none;
+   background-color: #7BAFD4;
+   padding: 10px;
+   width: 90%;
+   text-align: center;
+   margin-left: 3%;
+}
+
+.audit .button {
+  margin-left: 25% !important;
+}
+
+.audit h4{
+  margin-top: 20%;
+}

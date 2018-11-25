@@ -1,0 +1,97 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% load staticfiles %}
+
+<title>Accuracy</title>
+
+<div class="first-window">
+<div id="slides" class="slide3">
+
+    <p class="introTitle">File Your Taxes <u>Online</u></p>
+    <p class="descTitle">From filing your taxes online to viewing<br/>
+        your annual reports, Accuracy is the all in one platform<br />
+to help you manage your money<br />
+        <br />
+
+        <a href=""><span class="button">Get Started</span></a>
+    </p>
+
+ <div class="row">
+     <div class="column but-1" style="background-color: black;">
+
+     </div>
+     <div class="column but-2" style="background-color: white;">
+
+     </div>
+     <div class="column but-3" style="background-color: black;">
+
+     </div>
+ </div>
+</div>
+</div>
+
+<div class="motto">
+    <h1>Let Us Handle It</h1>
+    <h3>We're Here To Help You Manage Your Financial Life, Hassle-Free.</h3>
+</div>
+
+<div class="cardSection">
+
+    <div id="card" class="c1">
+      <img src="{% static '/admin/img/photo-1460925895917-afdab827c52f.jpg' %}" />
+        <div id="description" class="c2">
+        <h3>What We Offer</h3>
+        <p>Our all-in-one platform gives you everything you need<br />
+            to run your business or personal finances. Whether you<br/>
+need help with bookkeeping or establishing a business,<br/>
+our platform helps you manage all your finances. </p>
+            <a href=""><span class="button">Learn More</span></a>
+        </div>
+    </div>
+
+    <div id="card2" class="c3">
+        <div id="description" class="c4">
+        <h3>Finance Online or At A Location Near You</h3>
+        <p>Manage your money online for free or Schedule a consultation<br/>
+with an expert at one of our following locations. </p>
+            <div id="choices">
+            <a href=""><span class="button special">Manage Online</span></a>
+            <p>|or|</p>
+            <a href=""><span class="button special">Find an Office</span></a>
+            </div>
+        </div>
+        <img  src="{% static '/admin/img/rawpixel-649911-unsplash.jpg' %}" />
+    </div>
+
+    <div id="card" class="c5">
+      <img src="{% static '/admin/img/freestocks-org-484222-unsplash.jpg' %}" />
+        <div id="description" class="c6">
+        <h3>Need Help? We’ve Got You Covered</h3>
+        <p>Get personalized support from our Customer Service Team<br/>
+via email or by calling us at 478-456-9895. We’re here around
+the clock.<br/> Alternatively, Reach out to us using our Customer
+Support Page.  </p>
+            <a href=""><span class="button">Get Help</span></a>
+        </div>
+    </div>
+
+    <div id="card2" class="c7">
+        <div id="description" class="c8">
+        <h3>Our Community</h3>
+        <p>Our staff here at Accuracy take pride in providing the best<br/>
+platform for managing your financial life. With us you will be<br/>
+working with experienced professionals to make our time together<br/>
+simple and satisfying. </p>
+            <a href=""><span class="button">Our Staff</span></a>
+        </div>
+        <img src="{% static '/admin/img/rawpixel-790896-unsplash.jpg' %}" />
+    </div>
+
+
+</div>
+
+{% endblock %}
+

@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block content %}
+
+<title>Login - Accuracy</title>
+
+<link rel="stylesheet" type="text/css" href="{% static '/admin/css/login.css' %}">
+
+<div class="seperator">
+
+<div id="loginheader">
+
+    <h2>Login</h2>
+
+</div>
+
+<form class="logForm" method="post">
+  {% csrf_token %}
+    <div class="bubox">
+
+        <div class="imguh">
+            <a class="logoa"href="/"><img class="logo3" src="{% static '/admin/img/AccuracySingle.png' %}" /></a>
+            <h2>Welcome Back!</h2>
+        </div>
+
+        <hr/>
+
+
+        <div id="casing">
+  <p><label for="id_username">Username:</label> <input type="text" name="username" autofocus required id="id_username"></p>
+<p><label for="id_password">Password:</label> <input type="password" name="password" required id="id_password"></p>
+  <button class="but first1" type="submit">Login</button>
+    <button class="but" onclick="location.href='/accounts/signup';" target="_blank" href="accounts/signup/">Sign Up</button>
+        </div>
+    </div>
+</form>
+
+</div>
+
+
+{% endblock %}

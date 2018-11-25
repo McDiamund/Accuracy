@@ -1,0 +1,309 @@
+* {
+ font-weight: 5 !important;
+}
+
+
+/* Home Slider Section */
+
+#slides {
+  width: 100%;
+  height:  100vh;
+  background: url("../img/rawpixel-558599-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.slide1 {
+  background: url("../img/eder-pozo-perez-32852-unsplash.jpg") !important;
+  background-size: cover !important;
+  background-position: bottom !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed  !important;
+}
+
+.slide2 {
+  background: url("../img/joanna-kosinska-439233-unsplash.jpg") !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed  !important;
+}
+
+.slide3 {
+  background: url("../img/rawpixel-558599-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed  !important;
+}
+
+.but-1 {
+  cursor: pointer;
+}
+
+.but-2 {
+  cursor: pointer;
+}
+
+.but-3 {
+  cursor: pointer;
+}
+
+.column {
+ width: 5%;
+ display: inline-block;
+ padding: 2px;
+ margin-right: 10px;
+ height: 1px;
+}
+
+.row {
+  text-align: center;
+  position: relative;
+  clear: both;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  padding-top: 30vh;
+}
+
+.introTitle {
+  font-size: 7vh;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  padding-top: 35vh;
+}
+
+.descTitle {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2vh;
+}
+
+.button {
+  padding: 10px;
+  color: white;
+  background-color: black;
+}
+
+.first-window {
+  width: 100%;
+  height: 100vh;
+}
+
+@media only screen and (max-width: 1024px) {
+    #slides {
+     background-position: right;
+     }
+     .row {
+    padding-top: 30vh;
+    padding-left: 5px;
+  }
+}
+
+@media only screen and (max-width: 496px) {
+  .row {
+    padding-top: 2vh;
+    padding-left: 5px;
+  }
+}
+
+/* Motto Section */
+
+.motto {
+  width: 100%;
+  height: 80px;
+  text-align: center;
+}
+
+.motto h1 {
+    padding-top: 2%;
+}
+
+.motto h3 {
+    padding-bottom: 10px;
+}
+
+/* Divisions Sections */
+
+#card {
+  margin-top: 7%;
+  margin-bottom: 14%;
+  text-align: center;
+}
+
+#card img {
+  width: 900px;
+  height: 600px;
+  padding-left: 0%;
+  vertical-align: middle;
+}
+
+#card #description {
+  display: inline-block;
+  padding-left: 4%;
+  text-align: left;
+  font-size: 22px;
+  vertical-align: middle;
+}
+
+#card #description h3 {
+  font-size: 35px;
+}
+
+#card #description p {
+  padding-bottom: 6%;
+  font-size: 18px;
+}
+
+#card .button {
+ text-align: left;
+ font-size: 16px;
+}
+
+#card2 {
+  margin-top: 10%;
+  margin-bottom: 14%;
+  text-align: center;
+}
+
+#card2 img {
+  width: 900px;
+  height: 600px;
+  padding-left: 4%;
+  vertical-align: middle;
+}
+
+#card2 #description {
+  display: inline-block;
+  padding-left: 0%;
+  text-align: right;
+  font-size: 22px;
+  vertical-align: middle;
+  word-wrap: break-word;
+}
+
+#card2 #description h3 {
+  font-size: 35px;
+}
+
+#card2 #description p {
+  padding-bottom: 6%;
+  font-size: 18px;
+}
+
+#card2 #choices {
+    display: flex;
+    width: 300px;
+    float: right;
+}
+
+#card2 #choices .special {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+#card2 .button {
+ text-align: left;
+ font-size: 16px;
+}
+
+.c2 {
+  display: none;
+}
+
+.c4 {
+  display:none;
+}
+
+.c6 {
+  display: none;
+}
+
+.c8 {
+  display: none;
+}
+
+/* Responsive Divisions */
+
+@media only screen and (max-width: 1440px) {
+  #card img {
+    width: 450px;
+    height: 300px;
+  }
+
+  #card2 img {
+    width: 450px;
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 1272px) {
+  #card img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #card2 img {
+    width: 100%;
+    height: 100%;
+    padding-left: 0%;
+  }
+
+  #card {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  #card2 {
+    margin-top: 0%;
+    margin-bottom: 10%;
+  }
+
+  #card2 #description {
+    display: block;
+    text-align: center;
+  }
+
+  #card #description {
+    display: block;
+    text-align: center;
+  }
+
+  #card2 #choices {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #card #description p {
+     padding-bottom: 2%;
+  }
+
+  #card2 #description p {
+     padding-bottom: 2%;
+  }
+
+  #card #description {
+    padding-top: 5%;
+  }
+
+  #card2 #description {
+    padding-bottom: 5%;
+  }
+
+  footer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+
+
+
+
+

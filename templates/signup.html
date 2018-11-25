@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+
+{% block content %}
+  <title>Sign Up - Accuracy</title>
+
+  <script src="{% static '/admin/js/signup.js' %}"></script>
+
+  <link rel="stylesheet" type="text/css" href="{% static '/admin/css/login.css' %}" />
+
+<div class="seperator">
+
+<div id="loginheader2">
+
+    <h2>Sign Up</h2>
+
+</div>
+
+<form class="logForm" method="post">
+  {% csrf_token %}
+    <div class="bubox">
+
+        <div class="imguh">
+            <a class="logoa"href="/"><img class="logo3" src="{% static '/admin/img/AccuracySingle.png' %}" /></a>
+            <h2>Register Here!</h2>
+        </div>
+
+        <hr/>
+
+
+        <div id="casing2">
+            <p><label for="id_username"><b>Username:</b></label> <input type="text" name="username" maxlength="150" autofocus required id="id_username">
+                <span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span></p>
+            <p><label for="id_password1"><b>Password:</b></label> <input type="password" name="password1" required id="id_password1">
+    <span class="helptext"><ul><li>Your password can&#39;t be too similar to your other personal information.</li><li>Your password must contain at least 8 characters.</li><li>Your password can&#39;t be a commonly used password.</li><li>Your password can&#39;t be entirely numeric.</li></ul></span></p>
+            <p><label for="id_password2"><b>Password confirmation:</b></label> <input type="password" name="password2" required id="id_password2"> <span class="helptext">Enter the same password as before, for verification.</span></p>
+      <button class="but first2" type="submit">Sign Up</button>
+        </div>
+    </div>
+</form>
+
+</div>
+{% endblock %}

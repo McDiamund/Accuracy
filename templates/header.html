@@ -1,0 +1,38 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel='icon' href="{% static '/admin/img/AccuracySingle.png'%}" type='image/x-icon'>
+    <link rel="stylesheet" type="text/css" href="{% static '/admin/css/header.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static '/admin/css/home.css' %}">
+    <script src="{% static '/admin/js/home.js' %}"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <nav>
+    <a class="logoa"href="/"><img class="logo" src="{% static '/admin/img/AccuracyFbla.png' %}" /></a>
+      <label class="ham" for="toggle">&#9776;</label>
+      <input style="display:none" type="checkbox" id="toggle" />
+      <ul class="menu">
+    <li><span><a href="/">Home</a></span></li>
+    <li><span>Pricing/rates</span></li>
+    <li><span>About</span></li>
+    <li><span><a href="/contact">Contact</a></span></li>
+          <span class="break">|</span>
+          {% if request.user.is_authenticated %}
+          <li><span><a href="{% url 'logout' %}">Logout</a></span></li>
+          <li><span><a href="/profile">Profile</a></span></li>
+          {% endif %}
+
+          {% if not request.user.is_authenticated %}
+          <li><span><a href="{% url 'login' %}">Login</a></span></li>
+          <li><a href="{% url 'signup' %}"><span class="box">Sign Up</span></a></li>
+          {% endif %}
+      </ul>
+  </nav>

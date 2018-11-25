@@ -1,0 +1,160 @@
+/* Typography */
+
+* {
+padding: 0;
+margin: 0;
+font-family: 'Montserrat', sans-serif;
+}
+
+.inline {
+  display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+.monsterat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Navigation */
+
+.ham {
+ display: none;
+}
+
+nav {
+ height: 50px;
+ width: 100%;
+ display: table;
+ clear: both;
+ position: absolute;
+ background-color: transparent;
+ z-index: 5;
+}
+
+nav a {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+
+nav ul li span {
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    padding-top: 25px;
+    padding-right:  0.5em;
+    padding-left:  0.5em;
+    font-size: 16px;
+}
+
+nav ul li .box {
+  background-color: black;
+  color: white;
+  padding-top: 11px;
+  height: 29px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul {
+    float: right;
+    padding-right: 11%;
+}
+
+nav .logoa {
+  float: left;
+  margin-left: 11%;
+}
+
+nav .logo {
+   height: 40px;
+   line-height: 0;
+   padding: 10px;
+}
+
+@media only screen and (max-width: 818px) {
+     nav {
+      display: block;
+      border-bottom: 1px solid grey;
+      height: 65px !important;
+      background-color: white;
+     }
+     nav ul li .box {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        height: 20px;
+     }
+     .break {
+       display: none;
+     }
+     nav ul {
+      display: none;
+      padding: 0;
+      float: none;
+      background-color: black;
+      height: 40vh;
+     }
+     nav ul li {
+     margin-left: 11%;
+      display: block;
+      border-bottom: 1px solid grey;
+      width: 80%;
+      color: white;
+     }
+
+     nav a {
+      color: white;
+     }
+
+     nav .logoa {
+        display: inline-block;
+        padding: 0;
+        width: 50%;
+        float: none;
+     }
+
+     .ham {
+      display: block;
+      float: right;
+      margin-top: 5px;
+      margin-right: 5%;
+      font-size: 40px;
+      cursor: pointer;
+     }
+
+     #toggle:checked + .menu {
+        display: block;
+     }
+}
+
+/* Footer */
+
+#footer {
+  width: 90%;
+  border-top: 1px solid grey;
+  margin-left: 5%;
+  text-align: center;
+}
+
+.logoInfo h3 {
+  text-align: right;
+}
+
+.footColumn {
+  display: inline-block;
+  margin: 30px;
+  text-align: left;
+}
+
+.Index h3 {
+  font-size: 32px;
+}
+
+.Index p {
+  font-size: 22px;
+}

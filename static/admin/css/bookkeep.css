@@ -1,0 +1,54 @@
+.accounts {
+  width: 25%;
+  height: auto;
+  display: inline-block;
+  background-color: white;
+  background-color: #555555;
+  list-style-type: none;
+  position: relative;
+  flex-direction: column;
+}
+
+* {
+ font-weight: 5 !important;
+}
+
+.accounts a {
+  color: white;
+}
+
+.accounts li {
+  width: 100%;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px grey solid;
+  border-bottom: 1px grey solid;
+  text-align: center;
+}
+
+.accounts li a {
+  color: white;
+}
+
+.dis-ac {
+  display: flex;
+  width: 100%;
+  min-height: 50vh;
+}
+
+.dis-ac2 {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.a-choose {
+  display: inline-block;
+  margin-left: 20%;
+  padding-top: 22%;
+}
+
+.a-choose h1 {
+  margin-bottom: 3%;
+}

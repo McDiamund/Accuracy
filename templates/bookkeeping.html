@@ -1,0 +1,51 @@
+{% extends 'AccountBase.html' %}
+
+{% load static %}
+
+{%block content %}
+
+<title>{{ user.user }} - Accuracy</title>
+
+<link rel="stylesheet" type="text/css" href="{% static '/admin/css/profile.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static '/admin/css/bookkeep.css' %}" />
+
+<div id="anav">
+    <div class="wrapper">
+        <div id="logo"><a href="/"><img src="{% static '/admin/img/AccuracyFbla2.png' %}" /> <h2>| Account</h2></a></div>
+        <div id="profileicon"><img src="../static/admin/img/default-profile-picture-3.jpg"/></div>
+        <div id="cog"><img src="{% static '/admin/img/if_Settings_1891011.png' %}"/></div>
+        <div id="bell"><img src="{% static '/admin/img/notifications_white_192x192.png' %}"/></div>
+    </div>
+
+    <ul id="apptabs">
+        <a href="/profile"><li>Dashboard</li></a>
+        <a href="/bookkeeping"><li style="background-color: white; color: black;">Bookkeeping</li></a>
+        <a href="/bookkeeping/report/"><li>Annual Report</li></a>
+        <a href=""><li>Internal Audit</li></a>
+        <a href=""><li>Schedule Appointments</li></a>
+    </ul>
+</div>
+
+<div id="subnav">
+    <h1>Bookkeeping</h1>
+    <h3>Welcome Back, {{ user.user }}</h3>
+</div>
+
+<div class="dis-ac2">
+
+<ul class="accounts">
+{% for my_sub_item in my_list %}
+    <a href="{{ my_sub_item.id }}"><li>{{ my_sub_item  }}</li></a>
+    <a href="{{ my_sub_item.id }}/update/">Update</a>
+    <a href="{{ my_sub_item.id }}/delete/">Delete</a>
+{% endfor %}
+</ul>
+
+<div class="a-choose">
+<h1>Choose An Account Or Create A New One.</h1>
+    <a href="create/"><span class="button">Create An Account</span></a>
+</div>
+
+    </div>
+
+{%endblock%}

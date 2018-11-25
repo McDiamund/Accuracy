@@ -1,0 +1,90 @@
+{% extends 'AccountBase.html' %}
+
+{% load static %}
+
+{% load bookkeeping_tags %}
+
+{%block content %}
+
+<title>{{ user.user }} - Accuracy</title>
+
+<link rel="stylesheet" type="text/css" href="{% static '/admin/css/profile.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static '/admin/css/bookkeep.css' %}" />
+
+<div id="anav">
+    <div class="wrapper">
+        <div id="logo"><a href="/"><img src="{% static '/admin/img/AccuracyFbla2.png' %}" /> <h2>| Account</h2></a></div>
+        <div id="profileicon"><img src="../static/admin/img/default-profile-picture-3.jpg"/></div>
+        <div id="cog"><img src="{% static '/admin/img/if_Settings_1891011.png' %}"/></div>
+        <div id="bell"><img src="{% static '/admin/img/notifications_white_192x192.png' %}"/></div>
+    </div>
+
+    <ul id="apptabs">
+        <a href="/profile"><li>Dashboard</li></a>
+        <a href="/bookkeeping"><li style="background-color: white; color: black;">Bookkeeping</li></a>
+        <a href="/bookkeeping/report/"><li>Annual Report</li></a>
+        <a href=""><li>Internal Audit</li></a>
+        <a href=""><li>Schedule Appointments</li></a>
+    </ul>
+</div>
+
+<div id="subnav">
+    <h1>Your History</h1>
+    <h3>Welcome Back, {{ user.user }}</h3>
+</div>
+
+<h1 style="margin: 20px;">Create A New Record</h1>
+    <a style="margin: 20px;" href="rec-create/"><span class="button">Create A Record</span></a>
+
+<div style="margin-top: 20px;" class="dis-ac">
+
+<h1>{{ object.name }}</h1>
+    <h2>{{ id }}</h2>
+
+    <ul style="margin-top: 20px;" class="accounts">
+        <li>Date</li>
+{% for my_sub_item in my_list %}
+    <a><li>{{ my_sub_item.date  }}</li></a>
+        <a href="/bookkeeping/{{ my_sub_item.id }}-rec/rec-update/">Update</a>
+    <a href="/bookkeeping/{{ my_sub_item.id }}-rec/rec-delete/">Delete</a>
+{% endfor %}
+</ul>
+
+    <ul style="background-color: white; margin-top: 20px;" class="accounts">
+        <li style="color: black !important;">Details</li>
+{% for my_sub_item in my_list %}
+    <a><li style="color: black !important;">{{ my_sub_item.details  }}</li></a>
+        <a href="/bookkeeping/{{ my_sub_item.id }}-rec/rec-update/">Update</a>
+    <a href="/bookkeeping/{{ my_sub_item.id }}-rec/rec-delete/">Delete</a>
+{% endfor %}
+</ul>
+
+     <ul style="margin-top: 20px; background-color: white;" class="accounts">
+         <li style="color: black !important;">Income</li>
+{% for my_sub_item in my_list %}
+    <a ><li style="color: black !important;">{{ my_sub_item.income }}</li></a>
+         <a href="/bookkeeping/{{ my_sub_item.id }}-rec/rec-update/">Update</a>
+    <a href="/bookkeeping/{{ my_sub_item.id }}-rec/rec-delete/">Delete</a>
+         {% endfor %}
+</ul>
+
+     <ul style="margin-top: 20px; background-color: white;" class="accounts">
+         <li style="color: black !important;">Expenses</li>
+{% for my_sub_item in my_list %}
+    <a><li style="color: black !important;">{{ my_sub_item.expenses  }}</li></a>
+         <a href="/bookkeeping/{{ my_sub_item.id }}-rec/rec-update/">Update</a>
+    <a href="/bookkeeping/{{ my_sub_item.id }}-rec/rec-delete/">Delete</a>
+         {% endfor %}
+</ul>
+
+
+    <ul style="margin-top: 20px;" class="accounts">
+        <li style="background-color: white; color: black;">Balance</li>
+        {% for my_sub_item in my_list %}
+        <li>{{ my_sub_item.balance|add:account.balance }}</li>
+        {% endfor %}
+    </ul>
+
+    </div>
+
+{%endblock%}

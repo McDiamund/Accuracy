@@ -1,0 +1,219 @@
+/* LOGIN FORM */
+
+body.login {
+    background: #f8f8f8;
+}
+
+.login #header {
+    height: auto;
+    padding: 5px 16px;
+}
+
+.login #header h1 {
+    font-size: 18px;
+}
+
+.login #header h1 a {
+    color: #fff;
+}
+
+.login #content {
+    padding: 20px 20px 0;
+}
+
+.login #container {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 4px;
+    overflow: hidden;
+    width: 28em;
+    min-width: 300px;
+    margin: 100px auto;
+}
+
+.login #content-main {
+    width: 100%;
+}
+
+.login .form-row {
+    padding: 4px 0;
+    float: left;
+    width: 100%;
+    border-bottom: none;
+}
+
+.login .form-row label {
+    padding-right: 0.5em;
+    line-height: 2em;
+    font-size: 1em;
+    clear: both;
+    color: #333;
+}
+
+.login .form-row #id_username, .login .form-row #id_password {
+    clear: both;
+    padding: 8px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.login span.help {
+    font-size: 10px;
+    display: block;
+}
+
+.login .submit-row {
+    clear: both;
+    padding: 1em 0 0 9.4em;
+    margin: 0;
+    border: none;
+    background: none;
+    text-align: left;
+}
+
+.login .password-reset-link {
+    text-align: center;
+}
+
+#loginheader {
+   width: 50%;
+   height: 100vh;
+   float: left;
+   background: url(https://images.unsplash.com/photo-1531417666976-ed2bdbeb043b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7a0e97f24782d4128557407004008aeb&auto=format&fit=crop&w=1350&q=80);
+   background-image: no-repeat;
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+   padding-top: 0vh;
+   border-right: 2px solid grey;
+}
+
+#loginheader2 {
+   width: 50%;
+   height: 100vh;
+   float: left;
+   background: url(../img/kenrick-mills-594501-unsplash.jpg);
+   background-image: no-repeat;
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+   padding-top: 0vh;
+   border-right: 2px solid grey;
+}
+
+#loginheader h2 {
+  margin-right: auto;
+  margin-left: auto;
+  border: solid white 9px;
+  padding: 9px;
+  color: white;
+  margin-top: 40vh;
+  font-size: 72px;
+  width: 200px;
+  text-shadow: 0px 0px 7px rgba(150, 150, 150, 1);
+}
+
+
+#loginheader2 h2 {
+  margin-right: auto;
+  margin-left: auto;
+  border: solid white 9px;
+  padding: 9px;
+  color: white;
+  margin-top: 40vh;
+  font-size: 72px;
+  width: 285px;
+  text-shadow: 0px 0px 7px rgba(150, 150, 150, 1);
+}
+
+.logForm {
+  height: 95.1vh;
+  float: right;
+  width: 50%;
+  text-align: center;
+  background-color: #fbfaf8;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.logForm p {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.but {
+  background: rgb(26, 140, 255);
+  color: white;
+  width: 250px;
+  padding: 5px;
+  font-size: 18px;
+  height: 29px;
+  display: block;
+  margin-top: 5px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 20px;
+
+}
+
+.first1 {
+ margin-top: 20%;
+}
+
+.first2 {
+ margin-top: 6%;
+}
+
+.bubox {
+  background-color: white;
+  width: 400px;
+  height: 70vh;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 14vh;
+  border-radius: 20px;
+}
+
+#casing {
+  margin-top: 13vh;
+}
+
+#casing2 {
+  margin-top: 0vh;
+  padding: 50px;
+}
+
+.imguh {
+ color: black;
+ background-color: rgb(230, 243, 255);
+ height: 20vh;
+ border-top-right-radius: 20px;
+ border-top-left-radius: 20px;
+}
+
+.imguh h2 {
+  padding-top: 1vh;
+}
+
+#footer {
+  display: none !important;
+}
+
+.imguh img {
+  padding-top: 4vh;
+}
+
+.seperator {
+ display: flex;
+}
+
+.helptext {
+  font-size: 12px;
+  display: block;
+}
+
+.bubox ul li {
+  font-size: 12px;
+}
