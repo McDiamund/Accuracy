@@ -28,3 +28,7 @@ def profile_view(request, *args, **kwargs):
         'my_list': accounts
     }
     return render(request, "profile.html", context)
+
+def appointment_view(request, *args, **kwargs):
+    print (request.user)
+    return render(request, "appointment.html", {})

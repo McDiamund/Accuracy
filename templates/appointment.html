@@ -1,0 +1,34 @@
+{% extends 'AccountBase.html' %}
+
+{% load static %}
+
+{%block content %}
+
+<title>{{ user.user }} - Accuracy</title>
+
+<link rel="stylesheet" type="text/css" href="{% static '/admin/css/profile.css' %}" />
+
+<div id="anav">
+    <div class="wrapper">
+        <div id="logo"><a href="/"><img src="{% static '/admin/img/AccuracyFbla2.png' %}" /> <h2>| Account</h2></a></div>
+        <div id="profileicon"><img src="../static/admin/img/default-profile-picture-3.jpg"/></div>
+        <div id="cog"><img src="{% static '/admin/img/if_Settings_1891011.png' %}"/></div>
+        <div id="bell"><img src="{% static '/admin/img/notifications_white_192x192.png' %}"/></div>
+    </div>
+
+    <ul id="apptabs">
+        <a href="/profile"><li>Dashboard</li></a>
+        <a href="/bookkeeping"><li>Bookkeeping</li></a>
+        <a href="/bookkeeping/report/"><li>Annual Report</li></a>
+        <a href=""><li>Internal Audit</li></a>
+        <a href="/appointment"><li style="background-color: white; color: black;">Schedule Appointments</li></a>
+    </ul>
+</div>
+
+<div id="subnav2">
+    <h1>Schedule Appointment</h1>
+    <h3>Welcome Back, {{ user.user }}</h3>
+</div>
+
+
+{%endblock%}

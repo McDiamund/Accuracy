@@ -19,6 +19,7 @@ from django.urls import path, include
 from pages.views import home_view
 from pages.views import contact_view
 from pages.views import profile_view
+from pages.views import appointment_view
 from django.conf.urls.static import static
 
 urlpatterns = [
@@ -29,6 +30,7 @@ urlpatterns = [
     path('accounts/', include('django.contrib.auth.urls')),
     path('profile/', profile_view, name='profile'),
     path('bookkeeping/', include('bookkeeping.urls')),
+    path('appointment/', appointment_view, name='apppointment'),
 ]
 
 if settings.DEBUG:

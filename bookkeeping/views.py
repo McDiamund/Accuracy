@@ -113,7 +113,6 @@ class RecordUpdateView(UpdateView):
         'details',
         'income',
         'expenses',
-        'list',
     ]
 
 class RecordDeleteView(DeleteView):
