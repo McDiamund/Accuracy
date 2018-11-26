@@ -1,6 +1,8 @@
-{% extends 'AccountBase.html' %}
+{% extends 'base.html' %}
 
 {% load static %}
+
+{% load crispy_forms_tags %}
 
 {% block content %}
 
@@ -8,6 +10,8 @@
 
 <link rel="stylesheet" type="text/css" href="{% static '/admin/css/profile.css' %}" />
 <link rel="stylesheet" type="text/css" href="{% static '/admin/css/bookkeep.css' %}" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 <div id="anav">
     <div class="wrapper">
@@ -21,8 +25,8 @@
         <a href="/profile"><li>Dashboard</li></a>
         <a href="/bookkeeping"><li style="background-color: white; color: black;">Bookkeeping</li></a>
         <a href="/bookkeeping/report/"><li>Annual Report</li></a>
-        <a href=""><li>Internal Audit</li></a>
-        <a href=""><li>Schedule Appointments</li></a>
+        <a href="/audit"><li>Internal Audit</li></a>
+        <a href="/appointment"><li>Schedule Appointments</li></a>
     </ul>
 </div>
 
@@ -32,8 +36,8 @@
 
 <form action="." method="POST">
     {% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit" value="Save" />
+    {{ form|crispy }}
+    <input type="submit" class="but-cris" value="Save" />
 </form>
 
 {% endblock %}

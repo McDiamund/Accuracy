@@ -20,9 +20,9 @@
       <label class="ham" for="toggle">&#9776;</label>
       <input style="display:none" type="checkbox" id="toggle" />
       <ul class="menu">
-    <li><span><a href="/">Home</a></span></li>
-    <li><span>Pricing/rates</span></li>
-    <li><span>About</span></li>
+          <li><span class="home"><a href="/">Home</a></span></li>
+          <li><span><a href="/staff">Our Staff</a></span></li>
+          <li><span><a href="/about">About</a></span></li>
     <li><span><a href="/contact">Contact</a></span></li>
           <span class="break">|</span>
           {% if request.user.is_authenticated %}

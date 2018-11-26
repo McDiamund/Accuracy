@@ -292,3 +292,37 @@ color: white;
 .audit h4{
   margin-top: 20%;
 }
+
+nav .logo {
+  height: 65px;
+}
+
+.our-staff-wrap {
+  height: 32vh;
+  width: 100%;
+  padding-top: 6%;
+  text-align: center;
+  background: url(../img/photo-1517263869251-3d367cb6db21.jpg);
+  background-size: cover;
+}
+
+.our-staff-wrap h1 {
+   border: 5px solid white;
+   color: white;
+   width: 400px;
+   margin-left: auto;
+   margin-right: auto;
+   font-size: 60px;
+}
+
+nav ul li .box {
+  height: 39px !important;
+}
+
+nav ul li a {
+ color: white !important;
+}
+
+.form-text {
+  display: none !important;
+}

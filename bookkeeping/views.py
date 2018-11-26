@@ -17,6 +17,7 @@ from django.views.generic import (
 
 # Create your views here.
 
+
 class AccountListView(ListView):
 
     def get(self, request, *args, **kwargs):

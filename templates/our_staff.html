@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'admin/css/staff.css' %}" />
+
+    <div class="our-staff-wrap">
+        <h1>Our Staff</h1>
+    </div>
+
+    <h2>Our staff here at Accuracy take pride in providing the best
+platform for managing your financial life. With us you will be
+working with experienced professionals to make our time together
+simple and satisfying.</h2>
+
+    <div id="content-wrap">
+        <div class="row-1-flex">
+            <div class="profile">
+                <img src="{% static 'admin/img/c220ed7def74fe31b004e2cbbd404118.jpg' %}">
+                <h3>Dake Blunbar</h3>
+                <h4>Accountant</h4>
+            </div>
+            <div class="profile">
+                <img src="{% static 'admin/img/Po.jpg' %}">
+                <h3>Millen Tomlinson</h3>
+                <h4>Sales Manager</h4>
+            </div>
+            <div class="profile">
+                <img src="{% static 'admin/img/unnamed-1.jpg' %}">
+                <h3>Rhonda Rhumpkin</h3>
+                <h4>Advertising</h4>
+            </div>
+            <div class="profile">
+                <img src="{% static 'admin/img/unnamed-3-150x150.jpg' %}">
+                <h3>Rolan Dark</h3>
+                <h4>Personal Assistance</h4>
+            </div>
+            <div class="profile">
+                <img src="{% static 'admin/img/unnamed-150x150.jpg' %}">
+                <h3>Stacy Ren</h3>
+                <h4>PR Manager</h4>
+            </div>
+            <div class="profile">
+                <img src="{% static 'admin/img/kamdab_2.jpg' %}">
+                <h3>Kam Kinnas</h3>
+                <h4>IT Management</h4>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

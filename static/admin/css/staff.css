@@ -1,0 +1,54 @@
+.our-staff-wrap {
+  height: 22vh;
+  width: 100%;
+  padding-top: 10%;
+  text-align: center;
+  background: url(../img/rawpixel-790896-unsplash.jpg);
+  background-size: cover;
+}
+
+.our-staff-wrap h1 {
+   border: 5px solid white;
+   color: white;
+   width: 300px;
+   margin-left: auto;
+   margin-right: auto;
+   font-size: 60px;
+}
+
+.profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 200px;
+}
+
+.profile h4 {
+  margin-top: 10px;
+}
+
+.profile {
+  text-align: center;
+  width: 200px;
+  margin-right: 4%;
+  float: left;
+}
+
+h2 {
+ text-align: center;
+ padding-left: 10%;
+ padding-right: 10%;
+ padding-top: 5%;
+}
+
+.row-1-flex {
+  width: 100%;
+  display: flex;
+}
+
+#content-wrap {
+  padding: 7%;
+}
+
+.home a {
+  color: white !important;
+}

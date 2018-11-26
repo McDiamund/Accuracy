@@ -19,11 +19,7 @@ from django.urls import path, include
 from pages.views import home_view
 from pages.views import contact_view
 from pages.views import profile_view
-from pages.views import appointment_view
-from pages.views import our_staff_view
-from pages.views import about_view
 from django.conf.urls.static import static
-from pages.views import internal_audit
 
 urlpatterns = [
     path('', home_view, name='home'),
@@ -32,11 +28,7 @@ urlpatterns = [
     path('accounts/', include('accounts.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
     path('profile/', profile_view, name='profile'),
-    path('staff/', our_staff_view, name='our_staff'),
     path('bookkeeping/', include('bookkeeping.urls')),
-    path('appointment/', include('events.urls')),
-    path('about/', about_view, name="about"),
-    path('audit/', internal_audit, name="iaudit"),
 ]
 
 if settings.DEBUG:

@@ -31,6 +31,25 @@
   color: white;
 }
 
+form {
+ margin-top: 5%;
+}
+
+.form-control {
+ width: 50% !important;
+ margin-right: auto !important;
+ margin-left: auto !important;
+}
+
+.col-form-label {
+ margin-left: 25% !important;
+}
+
+.but-cris {
+  margin-left: 25% !important;
+  margin-bottom: 5%;
+}
+
 .dis-ac {
   display: flex;
   width: 100%;

@@ -1,0 +1,52 @@
+{% extends 'AccountBase.html' %}
+
+{% load static %}
+
+{%block content %}
+
+<title>{{ user.user }} - Accuracy</title>
+
+<link rel="stylesheet" type="text/css" href="{% static '/admin/css/profile.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static '/admin/css/bookkeep.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static '/admin/css/audit.css' %}" />
+
+<div id="anav">
+    <div class="wrapper">
+        <div id="logo"><a href="/"><img src="{% static '/admin/img/AccuracyFbla2.png' %}" /> <h2>| Account</h2></a></div>
+        <div id="profileicon"><img src="../static/admin/img/default-profile-picture-3.jpg"/></div>
+        <div id="cog"><img src="{% static '/admin/img/if_Settings_1891011.png' %}"/></div>
+        <div id="bell"><img src="{% static '/admin/img/notifications_white_192x192.png' %}"/></div>
+    </div>
+
+    <ul id="apptabs">
+        <a href="/profile"><li>Dashboard</li></a>
+        <a href="/bookkeeping"><li>Bookkeeping</li></a>
+        <a href="/bookkeeping/report/"><li>Annual Report</li></a>
+        <a href="/audit"><li style="background-color: white; color: black;">Internal Audit</li></a>
+        <a href="/appointment"><li>Schedule Appointments</li></a>
+    </ul>
+</div>
+
+<div id="subnav">
+    <h1>Internal Audits</h1>
+    <h3>Welcome Back, {{ user.user }}</h3>
+</div>
+
+<h1 style="padding: 10px;">How An Internal Auditor Can Improve Your Business.</h1>
+
+<p>"The internal audit activity helps an organization accomplish its objectives by bringing a systematic, disciplined approach to evaluate and improve the effectiveness of risk management, control and governance processes.”</p>
+<p><a href="https://www.marquette.edu/riskunit/internalaudit/role.shtml" target="_blank">Marquette University</a></p><br/>
+<p>Simply, Internal Audits provide a full overview of your business and can put you in the right direction on what areas to improve on to achieve success.</p>
+
+<h3 style="padding: 10px;">External vs. Internal</h3>
+
+<p>External audits are more focused on annual reports and financial statements while Internal audits covers a wide range of activities in order to help your business. Internal Audits look at whatever it takes in order to have proper financial company growth.</p>
+
+<h3 style="padding: 10px;">What Do I Do?</h3>
+
+<p>Internal Audits can be done by a professional "Internal Auditor", looking deep into your business to find key changes that can make it thrive. Its not a task that you can just do alone. If you want assistance in
+finding a professional Internal Auditor,</p>
+
+<p style="padding: 10px;">Email us at our <a href="/contact">Contact Page</a>.</p>
+
+{%endblock%}

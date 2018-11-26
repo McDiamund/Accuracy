@@ -40,12 +40,9 @@ INSTALLED_APPS = [
     'pages',
     'accounts.apps.AccountsConfig',
     'bookkeeping',
-    'events',
-    'crispy_forms'
+
     #You can install third party apps, or your own
 ]
-
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -143,12 +140,3 @@ LOGOUT_REDIRECT_URL = '/'
 
 ACCOUNT_ACTIVATION_DAYS = 7 # One-week activation window; you may, of course, use a different value.
 REGISTRATION_AUTO_LOGIN = True # Automatically log the user in.
-
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-DEFAULT_FROM_EMAIL = 'testing@example.com'
-EMAIL_HOST = ''
-EMAIL_HOST_USER = ''
-EMAIL_HOST_PASSWORD = ''
-EMAIL_USE_TLS = True
-EMAIL_PORT = 587
-
